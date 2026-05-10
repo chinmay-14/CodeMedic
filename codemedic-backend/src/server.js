@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 import aiRoutes from "./routes/aiRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 
-import sequelize from "./config/db.js";
+//import sequelize from "./config/db.js";
 import User from "./models/User.js";
 
 /* CONFIG */
@@ -42,24 +42,31 @@ const PORT = process.env.PORT || 5000;
 
 /* DATABASE */
 
-sequelize.sync()
+//sequelize.sync()
 
-  .then(() => {
+ // .then(() => {
 
-    console.log("MySQL Connected");
+  //  console.log("MySQL Connected");
 
-    app.listen(PORT, () => {
+  //  app.listen(PORT, () => {
 
-      console.log(
-        `Server running on port ${PORT}`
-      );
+    //  console.log(
+    //    `Server running on port ${PORT}`
+    //  );
 
-    });
+   // });
 
-  })
+ // })
 
-  .catch((error) => {
+ // .catch((error) => {
 
-    console.log(error);
+ //   console.log(error);
 
-  });
+ // });
+ app.listen(PORT, () => {
+
+  console.log(
+    `Server running on port ${PORT}`
+  );
+
+});
