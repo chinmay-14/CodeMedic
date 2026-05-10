@@ -2,10 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Editor from "@monaco-editor/react";
 import ReactMarkdown from "react-markdown";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useNavigate } from "react-router-dom";
-
 import toast from "react-hot-toast";
 
 import logo from "../assets/logo.png";
@@ -23,7 +20,6 @@ import {
   Trash2,
   Bug,
   Code2,
-  SparklesIcon,
   LogOut,
 } from "lucide-react";
 
@@ -63,9 +59,15 @@ console.log(user.name);
       setDisplayedAnalysis("");
 
       const response = await axios.post(
-  `${import.meta.env.VITE_BACKEND_URL}/api/ai/analyze`,
-  data
-)
+
+        `${import.meta.env.VITE_BACKEND_URL}/api/ai/analyze`,
+
+        {
+          code,
+          language,
+        }
+
+      );
 
       const aiResponse =
         response.data.analysis;
@@ -125,7 +127,9 @@ console.log(user.name);
         if (
           index > aiResponse.length
         ) {
+
           clearInterval(interval);
+
         }
 
       }, 8);
