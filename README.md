@@ -1,39 +1,87 @@
-CodeMedic 
+#  CodeMedic
 
-AI-Powered Coding Assistant for Debugging, Code Analysis, and Learning.
+> AI-Powered Coding Assistant for Debugging, Code Analysis, and Learning
 
-Live Demo:
-CodeMedic Live App
+CodeMedic is a full-stack AI-powered coding assistant that helps developers debug errors, understand code issues, and improve programming skills using AI-generated explanations and fixes.
 
-Backend API:
-CodeMedic Backend
+---
 
- Features
- AI Code Debugging
- Code Error Detection
- Beginner-Friendly Explanations
- Suggested Fixes
- Code Analysis History
- Copy AI Response
- Download Analysis
- Fully Deployed Full-Stack App
- Modern Responsive UI
- Monaco Code Editor Integration
- Tech Stack
-Frontend
-React.js
-Vite
-Tailwind CSS
-Monaco Editor
-React Router
-Axios
-Lucide Icons
-Backend
-Node.js
-Express.js
-Google Gemini API
-MySQL
-Sequelize ORM
-Deployment
-Vercel (Frontend)
-Render (Backend)
+#  Live Demo
+
+### Frontend
+https://code-medic-indol.vercel.app
+
+### Backend API
+https://codemedic.onrender.com
+
+---
+
+#  Features
+
+ AI Code Debugging  
+ Error Detection & Root Cause Analysis  
+ Beginner-Friendly Explanations  
+ Suggested Fixes & Corrected Code  
+ Multi-Language Support  
+ Monaco Code Editor Integration  
+ Copy AI Response  
+ Download Analysis  
+ History System  
+ Responsive Modern UI  
+ Full-Stack Deployment  
+
+---
+
+#  Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Monaco Editor
+- Axios
+- React Router DOM
+- React Hot Toast
+- Lucide React
+
+## Backend
+- Node.js
+- Express.js
+- Google Gemini API
+- Sequelize ORM
+- MySQL
+
+## Deployment
+- Vercel (Frontend)
+- Render (Backend)
+
+---
+
+#  Folder Structure
+
+```bash
+CodeMedic/
+│
+├── codemedic-frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
+│
+├── codemedic-backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── models/
+│   │   └── server.js
+│   │
+│   └── package.json
+│
+└── README.md
