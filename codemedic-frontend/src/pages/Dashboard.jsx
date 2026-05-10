@@ -63,15 +63,9 @@ console.log(user.name);
       setDisplayedAnalysis("");
 
       const response = await axios.post(
-
-        "http://localhost:5000/api/ai/analyze",
-
-        {
-          code,
-          language,
-        }
-
-      );
+  `${import.meta.env.VITE_BACKEND_URL}/api/ai/analyze`,
+  data
+)
 
       const aiResponse =
         response.data.analysis;
