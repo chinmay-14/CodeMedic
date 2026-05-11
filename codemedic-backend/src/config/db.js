@@ -1,16 +1,14 @@
 import { Sequelize } from "sequelize";
 
 const sequelize = new Sequelize(
-
-  "codemedic",     // database name
-  "root",          // mysql username
-  "Chinku1408", // mysql password
-
+  process.env.MYSQLDATABASE,
+  process.env.MYSQLUSER,
+  process.env.MYSQLPASSWORD,
   {
-    host: "localhost",
+    host: process.env.MYSQLHOST,
+    port: process.env.MYSQLPORT,
     dialect: "mysql",
   }
-
 );
 
 export default sequelize;
