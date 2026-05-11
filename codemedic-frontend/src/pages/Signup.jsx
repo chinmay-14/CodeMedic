@@ -68,7 +68,7 @@ function Signup() {
         "Signup successful!"
       );
 
-      navigate("/dashboard");
+      window.location.href="/#/login";
 
     } catch (error) {
 

@@ -76,7 +76,7 @@ function Login() {
         "Login successful!"
       );
 
-      navigate("/dashboard");
+      window.location.href = "/#/dashboard";  
 
     } catch (error) {
 
