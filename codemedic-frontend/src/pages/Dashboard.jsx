@@ -391,7 +391,7 @@ ${analysis}
               );
 
               window.location.href =
-                "/#/login";
+                "/login";
 
             }}
 

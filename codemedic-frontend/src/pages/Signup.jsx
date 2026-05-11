@@ -68,7 +68,7 @@ function Signup() {
         "Signup successful!"
       );
 
-      window.location.href="/#/login";
+      window.location.href="/login";
 
     } catch (error) {
 
